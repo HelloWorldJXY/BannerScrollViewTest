@@ -20,7 +20,7 @@ Then, run the following command:
 
 $ pod install
 
-
+//scrollview circle
     @IBOutlet weak var bannerView: PageScrollView!//An infinite loop in a clockwise direction
     //depends your demand
 
@@ -32,3 +32,17 @@ $ pod install
         bannerView.initWithCustom(imageNameArray)
         bannerView.delegate = self
     }
+
+
+//scrollview back and forth
+@IBOutlet weak var bannerView: BackForthScrollView!//An infinite loop in a clockwise direction
+//depends your demand
+
+override func viewDidLoad() {
+super.viewDidLoad()
+// Do any additional setup after loading the view, typically from a nib
+
+let imageNameArray = ["http://ac-feqh9l4j.clouddn.com/05bac9a7badfdfb8.jpg","http://ac-feqh9l4j.clouddn.com/05bac9a7badfdfb8.jpg","http://ac-feqh9l4j.clouddn.com/05bac9a7badfdfb8.jpg","http://ac-feqh9l4j.clouddn.com/05bac9a7badfdfb8.jpg"]// imageUrl or custom something else
+bannerView.initWithCustom(imageNameArray)
+bannerView.delegate = self
+}
