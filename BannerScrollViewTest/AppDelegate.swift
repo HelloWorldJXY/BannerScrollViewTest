@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
